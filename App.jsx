@@ -1,13 +1,13 @@
 import React from 'react';
+import {Text, View, StyleSheet} from 'react-native';
+import LandingScreen from './src/screen/LandingScreen';
 
-import {Text, View} from 'react-native';
-
-function App() {
+const App = () => {
   return (
     <View>
-      <Text>Hello World</Text>
+      <LandingScreen />
     </View>
   );
-}
+};
 
 export default App;
