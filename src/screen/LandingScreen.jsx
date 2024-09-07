@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Image, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import Colors from '../utility/Colors';
 
-const LandingScreen = () => {
+const LandingScreen = ({navigation}) => {
   {
     return (
       <View>
@@ -33,7 +33,9 @@ const LandingScreen = () => {
             Unveil hidden realms, forge unforgettable connectionss
           </Text>
 
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate('LoginScreen')}>
             <Text style={styles.buttonText}>Get Started</Text>
           </TouchableOpacity>
         </View>
